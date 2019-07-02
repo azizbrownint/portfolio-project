@@ -7,6 +7,15 @@ class Blog(models.Model):
     pubdate = models.DateTimeField()
     bodytext = models.TextField()
 
+    def __str__(self):
+        return self.title
+
+    def summary(self):
+        return self.bodytext[:100] + "..."
+
+    def pubdate_pretty(self):
+        return self.pubdate.strftime('%b %e %Y')
+
 
 
 # Create a blog models
