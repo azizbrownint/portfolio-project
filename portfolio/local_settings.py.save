@@ -1,0 +1,17 @@
+SECRET_KEY = '*e3deggs&$qmo3!2)mfq=j4dhotn7ucolddogehz_ipw+8)@3091d!ohlxkiag5c'
+
+ALLOWED_HOSTS = ['165.22.144.208']
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfoliodb',
+        'USER': 'djangodbman',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+
